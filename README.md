@@ -82,3 +82,7 @@ mbti-test/
 - E/I, S/N, T/F, J/P 각 선호 경향을 측정
 - 각 질문당 4개의 선택지 제공
 - 선택에 따라 MBTI 유형 계산
+
+## 📱 데모
+
+[https://lotto-number-generator-pi.vercel.app](https://mbti-test-blush.vercel.app/)
