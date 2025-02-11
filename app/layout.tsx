@@ -15,10 +15,16 @@ export const metadata: Metadata = {
   },
   keywords: ['MBTI', '성격유형', '심리테스트', '성격테스트', 'MBTI 테스트'],
   openGraph: {
-    title: 'MBTI 테스트 - 나의 성격유형은?',
-    description: '재미있고 정확한 MBTI 성격유형 테스트로 나를 알아보세요',
     type: 'website',
+    title: 'MBTI 테스트 - 나의 성격유형은?',
+    url: 'https://mbti-test-blush.vercel.app/',
+    description: '재미있고 정확한 MBTI 성격유형 테스트로 나를 알아보세요',
     locale: 'ko_KR',
+    images: [{
+      url: 'https://raw.githubusercontent.com/lhg1006/portfolio-images/a3ed392a2921be631bc8d94977ee17c8f26fb0d6/images/project/mbti-0.png',
+      width: 1200,
+      height: 630,
+    }]
   },
   robots: 'index, follow',
 }
