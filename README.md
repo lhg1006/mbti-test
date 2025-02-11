@@ -2,6 +2,15 @@
 
 Next.js와 TypeScript를 사용하여 만든 MBTI 성격유형 테스트 웹 애플리케이션입니다.
 
+## 📸 스크린샷
+
+|메인 화면|선택 화면|
+|:---:|:---:|
+|<img src="https://raw.githubusercontent.com/lhg1006/portfolio-images/a3ed392a2921be631bc8d94977ee17c8f26fb0d6/images/project/mbti-0.png" width="400">|<img src="https://raw.githubusercontent.com/lhg1006/portfolio-images/a3ed392a2921be631bc8d94977ee17c8f26fb0d6/images/project/mbti-1.png" width="400">|
+|테스트 화면|결과 화면|
+|<img src="https://raw.githubusercontent.com/lhg1006/portfolio-images/a3ed392a2921be631bc8d94977ee17c8f26fb0d6/images/project/mbti-2.png" width="400">|<img src="https://raw.githubusercontent.com/lhg1006/portfolio-images/a3ed392a2921be631bc8d94977ee17c8f26fb0d6/images/project/mbti-3.png" width="400">|
+
+
 ## 🚀 주요 기능
 
 - 20개의 질문을 통한 MBTI 성격유형 분석
