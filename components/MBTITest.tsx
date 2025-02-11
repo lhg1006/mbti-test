@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
-import { Progress } from "@/components/ui/progress"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import ProgressBar from "@/app/components/ProgressBar"
 
 type Answer = {
   [key: number]: string
@@ -68,7 +68,7 @@ export default function MBTITest({ onComplete, onBack, type }: MBTITestProps) {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center px-4 py-8">
       <div className="w-full max-w-mobile">
-        <Progress value={progress} className="mb-6" />
+        <ProgressBar progress={progress} />
         <AnimatePresence mode="wait">
           <motion.div
             key={currentQuestion}
