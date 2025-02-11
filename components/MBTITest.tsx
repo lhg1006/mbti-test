@@ -28,7 +28,8 @@ export default function MBTITest({ onComplete, onBack, type }: MBTITestProps) {
   const questions = type === "A" ? questionsA : questionsB
 
   const handleAnswer = (answer: string) => {
-    setAnswers({ ...answers, [currentQuestion]: answer })
+    const selectedType = question.options[parseInt(answer)].type
+    setAnswers({ ...answers, [currentQuestion]: selectedType })
     setSelectedOption(null)
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
@@ -85,12 +86,12 @@ export default function MBTITest({ onComplete, onBack, type }: MBTITestProps) {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <h2 className="text-lg md:text-xl mb-6 text-center text-gray-800">{question.question}</h2>
+                <h2 className="text-lg md:text-xl mb-6 text-center text-gray-800 font-bold">{question.question}</h2>
                 <RadioGroup className="space-y-4" value={selectedOption || ""} onValueChange={setSelectedOption}>
                   {question.options.map((option, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <RadioGroupItem
-                        value={option.type}
+                        value={`${index}`}
                         id={`option-${index}`}
                         className="border-2 border-purple-300 text-purple-600"
                       />
@@ -98,7 +99,7 @@ export default function MBTITest({ onComplete, onBack, type }: MBTITestProps) {
                         htmlFor={`option-${index}`}
                         className={`text-sm md:text-base flex-1 p-3 rounded-lg transition-all duration-300 ease-in-out cursor-pointer
                           ${
-                            selectedOption === option.type
+                            selectedOption === `${index}`
                               ? "bg-gradient-to-r from-purple-200 to-pink-200 text-purple-800"
                               : "hover:bg-gradient-to-r hover:from-purple-100 hover:to-pink-100"
                           }`}

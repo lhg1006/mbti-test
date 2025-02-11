@@ -1,6 +1,11 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'  
 import Footer from './components/Footer'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   title: 'MBTI 테스트 - 나의 성격유형은?',
@@ -15,7 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
   },
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
 }
 
