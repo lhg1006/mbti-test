@@ -85,4 +85,4 @@ mbti-test/
 
 ## 📱 데모
 
-[https://lotto-number-generator-pi.vercel.app](https://mbti-test-blush.vercel.app/)
+[MBTI 검사 링크!](https://mbti-test-blush.vercel.app/)
