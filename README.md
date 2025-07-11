@@ -2,6 +2,12 @@
 
 Next.js와 TypeScript를 사용하여 만든 MBTI 성격유형 테스트 웹 애플리케이션입니다.
 
+
+## 📱 데모
+
+[MBTI 검사 링크!](https://mbti-test-blush.vercel.app/)
+
+
 ## 📸 스크린샷
 
 |메인 화면|선택 화면|
@@ -82,7 +88,3 @@ mbti-test/
 - E/I, S/N, T/F, J/P 각 선호 경향을 측정
 - 각 질문당 4개의 선택지 제공
 - 선택에 따라 MBTI 유형 계산
-
-## 📱 데모
-
-[MBTI 검사 링크!](https://mbti-test-blush.vercel.app/)
